@@ -1,0 +1,94 @@
+  <ScrollView
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true">
+
+  >
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/icologo" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            android:layout_below="@id/imageView"
+            android:background="@drawable/headgrad"
+            android:text="Quiz App"
+            android:fontFamily="@font/fontb"
+            android:textSize="45sp"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:id="@+id/startquiz"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Start the Quiz"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/white"
+
+            android:fontFamily="@font/fonta"
+            android:textSize="20sp"
+            android:onClick="starttheq"
+            android:background="@drawable/buttonselector"
+
+
+            />
+        <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/startquiz"
+                card_view:cardCornerRadius="7dp"
+                android:layout_margin="22dp"
+                card_view:cardElevation="10dp"
+        >
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/udacity"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_gravity="left"
+                            android:layout_alignParentTop="true"
+                            app:srcCompat="@drawable/udgo" />
+                        <View
+                            android:padding="10dp"
+                            android:layout_below="@id/udacity"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.001mm"
+                            android:layout_marginRight="55dp"
+                            android:layout_marginLeft="55dp"
+                            android:background="@color/ac3"
+                            android:id="@+id/line-sep" />
+                        <TextView
+                            android:id="@+id/sidddd"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/line-sep"
+                            android:text="Developed by - Siddharth Pandey"
+                            android:fontFamily="@font/fonta" />
+                </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+  </ScrollView>

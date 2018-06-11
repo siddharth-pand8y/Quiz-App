@@ -1,0 +1,907 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardElevation="10dp">
+        <LinearLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="0.5"
+                app:srcCompat="@drawable/icologo" />
+
+            <View
+                android:id="@+id/line-sep2"
+                android:layout_width="0.001dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/ac3" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:fontFamily="@font/fontb"
+                android:text="Quiz App"
+                android:textColor="@color/ac2"
+                android:textSize="25sp"
+
+                />
+
+            <ImageView
+                android:id="@+id/udacity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/udgo" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="12dp"
+            android:paddingTop="80dp">
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_view2"
+                android:layout_margin="25dp"
+                card_view:cardCornerRadius="7dp"
+                card_view:cardElevation="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/q01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/fontc"
+                        android:padding="10dp"
+                        android:text="@string/qq01"
+                        android:textSize="15sp" />
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/rdgp01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q01"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+                        <RadioButton
+                            android:id="@+id/op11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans01"
+                            android:textColor="@color/ac3"
+                            android:textSize="14sp" />
+                        <RadioButton
+                            android:id="@+id/op12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans02"
+                            android:textColor="@color/ac3"
+                            android:textSize="14sp" />
+                        <RadioButton
+                            android:id="@+id/op13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans03"
+                            android:textColor="@color/ac3"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                    <View
+                        android:id="@+id/line-sepq1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.001dp"
+                        android:layout_below="@id/rdgp01"
+                        android:background="@color/ac3" />
+                    <TextView
+                        android:id="@+id/sol01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line-sepq1"
+                        android:padding="10dp"
+                        android:text="Solution :"
+                        android:textColor="@color/ac3"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question1"
+                android:layout_margin="25dp"
+                card_view:cardCornerRadius="7dp"
+                card_view:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/q02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/fontc"
+                        android:padding="10dp"
+                        android:text="@string/qq02"
+                        android:textSize="15sp" />
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/rdgp02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q02"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/op21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans01"
+                            android:textColor="@color/ac3" />
+
+                        <RadioButton
+                            android:id="@+id/op22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans02"
+                            android:textColor="@color/ac3" />
+
+                        <RadioButton
+                            android:id="@+id/op23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans03"
+                            android:textColor="@color/ac3" />
+                    </RadioGroup>
+
+                    <View
+                        android:id="@+id/line-sepq2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.001dp"
+                        android:layout_below="@id/rdgp02"
+                        android:background="@color/ac3" />
+
+                    <TextView
+                        android:id="@+id/sol02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line-sepq2"
+                        android:padding="10dp"
+                        android:text="Solution :"
+                        android:textColor="@color/ac3"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question2"
+                android:layout_margin="25dp"
+                card_view:cardCornerRadius="7dp"
+                card_view:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/q03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/fontc"
+                        android:padding="10dp"
+                        android:text="@string/qq03"
+                        android:textSize="15sp" />
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/rdgp03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q03"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/op31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans04"
+                            android:textColor="@color/ac3" />
+
+                        <RadioButton
+                            android:id="@+id/op32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans05"
+                            android:textColor="@color/ac3" />
+
+                        <RadioButton
+                            android:id="@+id/op33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans06"
+                            android:textColor="@color/ac3" />
+
+                        <RadioButton
+                            android:id="@+id/op34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans07"
+                            android:textColor="@color/ac3" />
+                    </RadioGroup>
+
+                    <View
+                        android:id="@+id/line-sepq3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.001dp"
+                        android:layout_below="@id/rdgp03"
+                        android:background="@color/ac3" />
+
+                    <TextView
+                        android:id="@+id/sol03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line-sepq3"
+                        android:padding="10dp"
+                        android:text="Solution :"
+                        android:textColor="@color/ac3"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question3"
+                android:layout_margin="25dp"
+                card_view:cardCornerRadius="7dp"
+                card_view:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/q04"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/fontc"
+                        android:padding="10dp"
+                        android:text="@string/qq04"
+                        android:textSize="15sp" />
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/rdgp04"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q04"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/op41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans08"
+                            android:textColor="@color/ac3" />
+
+                        <RadioButton
+                            android:id="@+id/op42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans09"
+                            android:textColor="@color/ac3" />
+
+                        <RadioButton
+                            android:id="@+id/op43"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans10"
+                            android:textColor="@color/ac3" />
+
+                        <RadioButton
+                            android:id="@+id/op44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans11"
+                            android:textColor="@color/ac3" />
+                    </RadioGroup>
+
+                    <View
+                        android:id="@+id/line-sepq4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.001dp"
+                        android:layout_below="@id/rdgp04"
+                        android:background="@color/ac3" />
+
+                    <TextView
+                        android:id="@+id/sol04"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line-sepq4"
+                        android:padding="10dp"
+                        android:text="Solution :"
+                        android:textColor="@color/ac3"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question4"
+                android:layout_margin="25dp"
+                card_view:cardCornerRadius="7dp"
+                card_view:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/q05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/fontc"
+                        android:padding="10dp"
+                        android:text="@string/qq05"
+                        android:textSize="15sp" />
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/rdgp05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q05"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/op51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans12"
+                            android:textColor="@color/ac3" />
+
+                        <RadioButton
+                            android:id="@+id/op52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans13"
+                            android:textColor="@color/ac3" />
+
+                        <RadioButton
+                            android:id="@+id/op53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans14"
+                            android:textColor="@color/ac3" />
+
+                        <RadioButton
+                            android:id="@+id/op54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/ans15"
+                            android:textColor="@color/ac3" />
+                    </RadioGroup>
+
+                    <View
+                        android:id="@+id/line-sepq5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.001dp"
+                        android:layout_below="@id/rdgp05"
+                        android:background="@color/ac3" />
+
+                    <TextView
+                        android:id="@+id/sol05"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line-sepq5"
+                        android:padding="10dp"
+                        android:text="Solution :"
+                        android:textColor="@color/ac3"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/question6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question5"
+                android:layout_margin="25dp"
+                card_view:cardCornerRadius="7dp"
+                card_view:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/q06"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/fontc"
+                        android:padding="10dp"
+                        android:text="@string/qq06"
+                        android:textSize="15sp" />
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/rdgp06"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q06"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/op61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans16"
+                            android:textColor="@color/ac3" />
+
+                        <CheckBox
+                            android:id="@+id/op62"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans17"
+                            android:textColor="@color/ac3" />
+
+                        <CheckBox
+                            android:id="@+id/op63"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans18"
+                            android:textColor="@color/ac3" />
+
+                        <CheckBox
+                            android:id="@+id/op64"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans19"
+                            android:textColor="@color/ac3" />
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/line-sepq6"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.001dp"
+                        android:layout_below="@id/rdgp06"
+                        android:background="@color/ac3" />
+
+                    <TextView
+                        android:id="@+id/sol06"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line-sepq6"
+                        android:padding="10dp"
+                        android:text="Solution :"
+                        android:textColor="@color/ac3"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/question7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question6"
+                android:layout_margin="25dp"
+                card_view:cardCornerRadius="7dp"
+                card_view:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/q07"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/fontc"
+                        android:padding="10dp"
+                        android:text="@string/qq07"
+                        android:textSize="15sp" />
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/rdgp07"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q07"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/op71"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:text="@string/ans20"
+                            android:textColor="@color/ac3" />
+                        android:onClick="onCheckboxClicked"/>
+
+                        <CheckBox
+                            android:id="@+id/op72"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans21"
+                            android:textColor="@color/ac3" />
+
+                        <CheckBox
+                            android:id="@+id/op73"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans22"
+                            android:textColor="@color/ac3" />
+
+                        <CheckBox
+                            android:id="@+id/op74"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans23"
+                            android:textColor="@color/ac3" />
+
+                        <CheckBox
+                            android:id="@+id/op75"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans24"
+                            android:textColor="@color/ac3" />
+
+                        <CheckBox
+                            android:id="@+id/op76"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans25"
+                            android:textColor="@color/ac3" />
+
+                        <CheckBox
+                            android:id="@+id/op77"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans26"
+                            android:textColor="@color/ac3" />
+
+                        <CheckBox
+                            android:id="@+id/op78"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans27"
+                            android:textColor="@color/ac3" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line-sepq7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.001dp"
+                        android:layout_below="@id/rdgp07"
+                        android:background="@color/ac3" />
+
+                    <TextView
+                        android:id="@+id/sol07"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line-sepq7"
+                        android:padding="10dp"
+                        android:text="Solution :"
+                        android:textColor="@color/ac3"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/question8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question7"
+                android:layout_margin="25dp"
+                card_view:cardCornerRadius="7dp"
+                card_view:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/q08"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/fontc"
+                        android:padding="10dp"
+                        android:text="@string/qq08"
+                        android:textSize="15sp" />
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/rdgp08"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q08"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/op81"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:text="@string/ans28"
+                            android:textColor="@color/ac3" />
+                        android:onClick="onCheckboxClicked"/>
+
+                        <CheckBox
+                            android:id="@+id/op82"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans29"
+                            android:textColor="@color/ac3" />
+
+                        <CheckBox
+                            android:id="@+id/op83"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans30"
+                            android:textColor="@color/ac3" />
+
+                        <CheckBox
+                            android:id="@+id/op84"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans31"
+                            android:textColor="@color/ac3" />
+
+                        <CheckBox
+                            android:id="@+id/op85"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans32"
+                            android:textColor="@color/ac3" />
+
+                        <CheckBox
+                            android:id="@+id/op86"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fontc"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/ans33"
+                            android:textColor="@color/ac3" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line-sepq8"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.001dp"
+                        android:layout_below="@id/rdgp08"
+                        android:background="@color/ac3" />
+
+                    <TextView
+                        android:id="@+id/sol08"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line-sepq8"
+                        android:padding="10dp"
+                        android:text="Solution :"
+                        android:textColor="@color/ac3"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/question9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question8"
+                android:layout_margin="25dp"
+
+                card_view:cardCornerRadius="7dp"
+                card_view:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/q09"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/fontc"
+                        android:padding="10dp"
+                        android:text="@string/qq09"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/rdgp09"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q09"
+                        android:layout_margin="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/fontc"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:id="@+id/line-sepq9"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.001dp"
+                        android:layout_below="@id/rdgp09"
+                        android:background="@color/ac3" />
+
+                    <TextView
+                        android:id="@+id/sol09"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line-sepq9"
+                        android:padding="10dp"
+                        android:text="Solution :"
+                        android:textColor="@color/ac3"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <Button
+                android:id="@+id/endquiz"
+                android:layout_width="298dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question9"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/buttonselector"
+                android:fontFamily="@font/fonta"
+                android:onClick="endtheq"
+                android:text="Submit"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+            <View
+                android:id="@+id/line-sep10"
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp"
+                android:layout_below="@id/endquiz"
+                android:background="@color/ac3" />
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line-sep10"
+                android:layout_marginTop="10dp"
+                card_view:cardCornerRadius="1dp"
+                card_view:cardElevation="100dp">
+                <LinearLayout
+                    android:id="@+id/bottom_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/resss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/fontb"
+                        android:paddingBottom="10dp"
+                        android:text="Click the submit button for results"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/resss2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/resss"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/fontb"
+                        android:text="All the Best!"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

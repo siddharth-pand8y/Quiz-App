@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Quiz App - SP</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="qq01">Q.01) Tanya is older than Eric. Cliff is older than Tanya. Eric is older than Cliff. If the first two statements are true, the third statement is</string>
+    <string name="ans01">A. True</string>
+    <string name="ans02">B. False</string>
+    <string name="ans03">C. Uncertain</string>
+    <string name="qq02">Q.02) Blueberries cost more than strawberries. Blueberries cost less than raspberries. Raspberries cost more than strawberries and blueberries. If the first two statements are true, the third statement is</string>
+    <string name="qq03">Q.03) This country changes its name to Kingdom Of ESwatini recently.</string>
+    <string name="ans04">A. Madagascar</string>
+    <string name="ans05">B. Botswana</string>
+    <string name="ans06">C. Swaziland</string>
+    <string name="ans07">D. Malawi</string>
+    <string name="qq04">Q.04)This is the host country of 23rd edition of the World Congress on Information Technology (WCIT-2019).</string>
+    <string name="ans08">A. Mexico</string>
+    <string name="ans09">B. Brazil</string>
+    <string name="ans10">C. Canada</string>
+    <string name="ans11">D. Armenia</string>
+    <string name="qq05">Q.05)The great Victoria Desert is located in</string>
+    <string name="ans12">A. Canada</string>
+    <string name="ans13">B. West Africa</string>
+    <string name="ans14">C. Australia</string>
+    <string name="ans15">D. North America</string>
+    <string name="qq06">Q.06)Which of the following is true about the Dialog class?(Android)</string>
+    <string name="ans16">A. You can add a custom layout to a dialog using setContentView().</string>
+    <string name="ans17">B. A dialog has a life-cycle independent of the Activity.
+</string>
+    <string name="ans18">C. A dialog is displayed on the screen using method show().
+</string>
+    <string name="ans19">D. It does not have a method to access the activity that owns it.
+</string>
+    <string name="qq07">Q.07) Frank’s average (arithmetic mean) on the six biology tests was 89. On each of his first five tests, his grade was between 90 and 100, inclusive. Which of the following could have been his grade on his sixth test? Indicate all such grades.</string>
+    <string name="ans20">A. 25</string>
+    <string name="ans21">B. 35</string>
+    <string name="ans22">C. 45</string>
+    <string name="ans23">D. 55</string>
+    <string name="ans24">E. 65</string>
+    <string name="ans25">F. 75</string>
+    <string name="ans26">G. 85</string>
+    <string name="ans27">H. 95</string>
+    <string name="qq08">Q.08) Which of the following integers are multiples of both 2 and 3? Choose all such integers.</string>
+    <string name="ans28">A. 8</string>
+    <string name="ans29">B. 9</string>
+    <string name="ans30">C. 12</string>
+    <string name="ans31">D. 18</string>
+    <string name="ans32">E. 21</string>
+    <string name="ans33">F. 36</string>
+    <string name="qq09">Q.09) DDMS is a  a GUI debugging application included with the SDK. What is the full form of DDMS</string>
+    <string name="corr01">CORRECT ANSWER</string>
+    <string name="ans34">Dalvik Debug Monitor Server</string>
+
+</resources>
